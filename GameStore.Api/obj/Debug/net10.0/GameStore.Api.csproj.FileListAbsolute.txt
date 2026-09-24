@@ -26,3 +26,4 @@
 /Users/jerry/Documents/Dot-Net Learning/GameStore/GameStore.Api/obj/Debug/net10.0/GameStore.Api.pdb
 /Users/jerry/Documents/Dot-Net Learning/GameStore/GameStore.Api/obj/Debug/net10.0/GameStore.Api.genruntimeconfig.cache
 /Users/jerry/Documents/Dot-Net Learning/GameStore/GameStore.Api/obj/Debug/net10.0/ref/GameStore.Api.dll
+/Users/jerry/Documents/Dot-Net Learning/GameStore/GameStore.Api/obj/Debug/net10.0/GameStore.Api.sourcelink.json
