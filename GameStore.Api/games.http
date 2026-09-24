@@ -1,0 +1,27 @@
+GET http://localhost:5295/games
+
+###
+GET http://localhost:5295/games/1
+
+
+###
+POST http://localhost:5295/games
+Content-Type: application/json
+
+{
+  "name": "The Legend of Zelda: Breath of the Wild",
+  "genre": "Action-adventure",
+  "price": 59.99,
+  "releaseDate": "2017-03-03"
+}
+
+###
+PUT http://localhost:5295/games/1
+Content-Type: application/json
+
+{
+    "name": "PUBG: Battlegrounds",
+    "genre": "Battle Royale",
+    "price": 12.54,
+    "releaseDate": "2019-11-02"
+}
