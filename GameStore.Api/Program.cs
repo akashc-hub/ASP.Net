@@ -13,7 +13,14 @@ List<GameDto> games = [
 app.MapGet("/games", () => games);
 
 //GET /games/1
-app.MapGet("/games/{id}", (int id) => games.Find(game => game.Id == id)).WithName(GetGameEndpointName);
+app.MapGet("/games/{id}", (int id) => 
+{
+    
+    var game = games.Find(game => game.Id == id);
+
+    return game is not null ? Results.Ok(game) : Results.NotFound();
+    
+}).WithName(GetGameEndpointName);
 
 //POST /games
 app.MapPost("/games", (CreateGameDto newGame) =>
@@ -55,8 +62,6 @@ app.MapPut("/games/{id}", (int id, CreateGameDto updatedGame) =>
 //DELETE /games/1
 app.MapDelete("/games/{id}", (int id) =>
 {
-    games.RemoveAll(game => game.Id == id);
-
     return Results.NoContent();
 });
     
