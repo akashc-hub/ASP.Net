@@ -1,7 +1,7 @@
 GET http://localhost:5295/games
 
 ###
-GET http://localhost:5295/games/1
+GET http://localhost:5295/games/2
 
 
 ###
@@ -9,21 +9,21 @@ POST http://localhost:5295/games
 Content-Type: application/json
 
 {
-  "name": "The Legend of Zelda: Breath of the Wild",
-  "genreId": 3,
-  "price": 59.99,
-  "releaseDate": "2017-03-03"
+  "name": "Call of Duty: Modern Warfare II",
+  "genreId": 1,
+  "price": 20.99,
+  "releaseDate": "2019-11-02"
 }
 
 ###
-PUT http://localhost:5295/games/1
+PUT http://localhost:5295/games/2
 Content-Type: application/json
 
 {
-    "name": "PUBG: Battlegrounds",
-    "genre": "Battle Royale",
-    "price": 12.54,
-    "releaseDate": "2019-11-02"
+  "name": "Call of Duty: Black Ops Cold War",
+  "genreId": 1,
+  "price": 30.59,
+  "releaseDate": "2019-11-02"
 }
 
 ###
